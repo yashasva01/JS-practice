@@ -17,3 +17,7 @@ let checkleapYear = (xYear) => {
 }
 
 console.log(checkleapYear(year))
+
+module.exports = {}
+module.exports.checkleapYear = checkleapYear
+module.exports.isLeapYear = isLeapYear

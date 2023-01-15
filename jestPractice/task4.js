@@ -2,7 +2,6 @@ let strArray = ['we', 'love', 'code', 'academy', 'dacaemy']
 
 function longestWord (strArr) {
     let longest = ''
-    //console.log(longest.length)
     for(let i in strArr) {
         if (strArr[i].length > longest.length){
             longest = strArr[i]
@@ -21,7 +20,6 @@ console.log(outWord)
 
 let longestStr = (strArr) => {
     let longest = ''
-    //console.log(longest.length)
     for(let i in strArr) {
         if (strArr[i].length > longest.length){
             longest = strArr[i]
@@ -37,3 +35,8 @@ let longestStr = (strArr) => {
 let printMessage = longestStr(strArray)
 
 console.log(printMessage)
+
+
+module.exports = {}
+module.exports.longestWord = longestWord
+module.exports.longestStr = longestStr

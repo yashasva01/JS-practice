@@ -1,13 +1,21 @@
-let numbers = [1,2,3,4,5]
+let numbers = [1.6,2.5,3,4,5,6]
 
 function findGreatestEven(nums){
-    let greatNumber = Number.MIN_VALUE
+    //remember not to use Number.MIN_VALUE
+    //console.log(greatNumber<0)
+    let greatNumber = Number.NEGATIVE_INFINITY
+    if (nums.length == 0) return 'Array Empty'
     for (let i in nums) {
-        if (nums[i] % 2 == 0){
-            if (nums[i] > greatNumber){
-                greatNumber = nums[i]
+        if(Number.isInteger(nums[i])){
+            if (nums[i] % 2 == 0){
+                if (nums[i] > greatNumber){
+                    greatNumber = nums[i]
+                }
             }
+        }else {
+            return 'Float Value Found Check Input'
         }
+        
     }
     return greatNumber
 }
@@ -17,13 +25,19 @@ let greatestEvenNumber = findGreatestEven(numbers)
 console.log(greatestEvenNumber)
 
 let biggestEvenNumber = (nums) => {
-    let greatNumber = Number.MIN_VALUE
+    let greatNumber = Number.NEGATIVE_INFINITY
+    if (nums.length == 0) return 'Array Empty'
     for (let i in nums) {
-        if (nums[i] % 2 == 0){
-            if (nums[i] > greatNumber){
-                greatNumber = nums[i]
+        if(Number.isInteger(nums[i])){
+            if (nums[i] % 2 == 0){
+                if (nums[i] > greatNumber){
+                    greatNumber = nums[i]
+                }
             }
+        }else {
+            return 'Float Value Found Check Input'
         }
+        
     }
     return greatNumber
 }

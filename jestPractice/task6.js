@@ -1,6 +1,7 @@
-let strInput = 'javaScript'
+let strInput = '      Script'
 
 function checkScript (strVal) {
+    strVal = strVal.trim()
     if (strVal.length == 0) {
         return 'Enter the string'
     }else if (strVal.includes(' ') &&  strVal.lenght !=0){
@@ -15,6 +16,7 @@ function checkScript (strVal) {
 console.log(checkScript(strInput))
 
 let haveScript = (strVal) => {
+    strVal = strVal.trim()
     if (strVal.length == 0) {
         return 'Enter the string'
     }else if (strVal.includes(' ') &&  strVal.lenght !=0){
@@ -27,3 +29,7 @@ let haveScript = (strVal) => {
 }
 
 console.log(haveScript(strInput))
+
+module.exports = {}
+module.exports.checkScript = checkScript
+module.exports.haveScript = haveScript
