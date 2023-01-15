@@ -16,4 +16,21 @@ let greatestEvenNumber = findGreatestEven(numbers)
 
 console.log(greatestEvenNumber)
 
-module.exports = findGreatestEven
+let biggestEvenNumber = (nums) => {
+    let greatNumber = Number.MIN_VALUE
+    for (let i in nums) {
+        if (nums[i] % 2 == 0){
+            if (nums[i] > greatNumber){
+                greatNumber = nums[i]
+            }
+        }
+    }
+    return greatNumber
+}
+
+
+console.log(biggestEvenNumber(numbers))
+
+module.exports = {}
+module.exports.findGreatestEven = findGreatestEven
+module.exports.biggestEvenNumber = biggestEvenNumber
