@@ -1,30 +1,30 @@
-let strArray = ['this', 'is', 'an', 'array']
+let strArray = ['this', 'is', 'an', 'array'];
 
 function concatArray (strVal) {
-    let output = ''
+    let output = '';
     for (let i in strVal){
-        if(strVal[i] == '') continue
-        let strLen = strVal[i].length
-        output = output + strVal[i].slice(1,strLen)
+        if(strVal[i] == '') continue;
+        let strLen = strVal[i].length;
+        output = output + strVal[i].slice(1,strLen);
     }
-    return output
+    return output;
 }
 
-console.log(concatArray(strArray))
+console.log(concatArray(strArray));
 
 
 let joinArray = (strVal) => {
-    let output = ''
+    let output = '';
     for (let i in strVal){
-        if(strVal[i] == '') continue
-        let strLen = strVal[i].length
-        output = output + strVal[i].slice(1,strLen)
+        if(strVal[i] == '') continue;
+        let strLen = strVal[i].length;
+        output = output + strVal[i].slice(1,strLen);
     }
-    return output
-}
+    return output;
+};
 
-console.log(joinArray(strArray))
+console.log(joinArray(strArray));
 
-module.exports = {}
-module.exports.concatArray = concatArray
-module.exports.joinArray = joinArray
+module.exports = {};
+module.exports.concatArray = concatArray;
+module.exports.joinArray = joinArray;
