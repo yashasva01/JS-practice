@@ -9,7 +9,8 @@
         {
             "files": [
               "./jestPractice/*",
-              "./jestPractice/arrayUtils/*"
+              "./jestPractice/arrayUtils/*",
+              ".//jestPractice/errorHandling/*"
             ],
             "env": {
               "jest": true
