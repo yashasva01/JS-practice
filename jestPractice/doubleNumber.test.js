@@ -2,7 +2,7 @@ const { calculateDouble } = require('./doubleNumber');
 
 describe('Array Utils', () => {
     describe('Unsupported type', () => {
-        it('Should support only array of integer as input', () => {
+        it('Should support only array as input', () => {
             expect(()=> calculateDouble({})).toThrow('The Input type did not match the requirement');
         });
         it('Should return an array of integer with double the value', () => {

@@ -1,4 +1,4 @@
-let myMonth = 15// 10;
+let myMonth = 15;// 10;
 
 function getMonthName (mo) {
     mo--;
@@ -17,9 +17,9 @@ function getMonthName (mo) {
 
 try{
     let monthName = getMonthName(myMonth);
-    console.log(monthName)
+    console.log(monthName);
 } catch (e) {
-    let monthName = 'unknown';
+    //let monthName = 'unknown';
     //console.log('Error', e.message);
     console.logMyErrors(e);
 }

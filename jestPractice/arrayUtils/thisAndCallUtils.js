@@ -4,7 +4,7 @@ const division = (number1, number2) => {
     }
     return number1 / number2;
 };
-console.log(division (10 , 2));
+console.log(division (10 , 0));
 console.log(10 / 0);
 
 
